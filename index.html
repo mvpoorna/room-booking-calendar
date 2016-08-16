@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Calender</title>
+    <link href='css/style.css' rel='stylesheet' />
+    <link href='css/bootstrap.min.css' rel='stylesheet' />
+    <link href='css/font-awesome.min.css' rel='stylesheet' />
+    <link href='css/jquery-ui.css' rel='stylesheet' />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="header">
+                <ul class="headericons pull-left">
+                    <li><img src="images/icon_Calender.png" /><a href="javascript:void(0)">Calendar</a><img src="images/icon_Divider.png" /></li>
+                    <li><img src="images/icon_Customer.png" /><a href="javascript:void(0)">Customers</a><img src="images/icon_Divider.png" /></li>
+                    <li><img src="images/icon_Logbook.png" /><a href="javascript:void(0)">Logbook</a><img src="images/icon_Divider.png" /></li>
+                    <li><img src="images/icon_Meals.png" /><a href="javascript:void(0)">Meals</a><img src="images/icon_Divider.png" /></li>
+                    <li><img src="images/icon_Invoice.png" /><a href="javascript:void(0)">InvoicesBills</a><img src="images/icon_Divider.png" /></li>
+                    <li><img src="images/icon_Statistics.png" /><a href="javascript:void(0)">Statistics</a><img src="images/icon_Divider.png" /></li>
+                    <li><img src="images/icon_Rooms.png" /><a href="javascript:void(0)">Rooms</a><img src="images/icon_Divider.png" /></li>
+                </ul>
+                <ul class="pull-right headericons">
+                    <li><img src="images/icon_Users.png" /><a href="javascript:void(0)">Change User</a><img src="images/icon_Divider.png" /></li>
+                    <li><img src="images/icon_Orders.png" /><a href="javascript:void(0)">Orders</a><img src="images/icon_Divider.png" /></li>
+                    <li><img src="images/icon_Error.png" /><a href="javascript:void(0)">Report Error</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="row" style="position:relative;bottom:6px;">
+            <div class="table-main">
+                <table class="table table-condensed">
+                    <tr class="week">
+                        <th rowspan="2" style="width:160px;">
+                            Room Group Filter
+                            <div>
+                                <select class="form-control">
+                                    <option>All</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                        </th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                    </tr>
+                    <tr class="day">
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td><span>003</span><span class="pull-right">2+1</span></td>
+                        <td class="gray"></td>
+                        <td class="gray"></td>
+                        <td class="gray"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="blue"></td>
+                        <td class="red"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span>Room1</span><span class="pull-right">1 <i class="fa fa-flag green-flag"></i></span></td>
+                        <td class="gray"></td>
+                        <td class="gray"></td>
+                        <td class="gray"></td>
+                        <td style="width:100px;"><span class="badge-yellow">Om-1ppl-</span></td>
+                        <td></td>
+                        <td style="width:100px;"><span class="badge-yellow">test-1ppl-</span></td>
+                        <td></td>
+                        <td></td>
+                        <td class="blue"></td>
+                        <td class="red"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><span>Room2</span><span class="pull-right">2+1 <i class="fa fa-flag green-flag"></i></span></td>
+                        <td class="gray"></td>
+                        <td class="gray"></td>
+                        <td class="gray"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="blue"></td>
+                        <td class="red"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="col-md-6">
+                    <div class="input-group form-group">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default btn-sm" type="button">
+                                <
+                            </button>
+                        </span>
+                        <input type="text" class="form-control input-sm" placeholder="Day">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default btn-sm" type="button">
+                                >
+                            </button>
+                        </span>
+                    </div>
+                    <div class="input-group form-group">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default btn-sm" type="button">
+                                <
+                            </button>
+                        </span>
+                        <input type="text" class="form-control input-sm" placeholder="Month">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default btn-sm" type="button">
+                                >
+                            </button>
+                        </span>
+                    </div>
+                    <div class="input-group form-group">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default btn-sm" type="button">
+                                <
+                            </button>
+                        </span>
+                        <input type="text" class="form-control input-sm" placeholder="Year">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default btn-sm" type="button">
+                                >
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Calendar Width</label>
+                        <div id="calendarwidth"></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Calendar Height</label>
+                        <div id="calendarheight"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 form-horizontal">
+                <div class="row">
+                    <div class="col-md-6" style="padding-left:0px;">
+                        <div class="form-group">
+                            <button class="btn btn-sm btn-block btn-default">Add Reservation</button>
+                        </div>
+                        <div class="form-group">
+                            <div class="pull-left">
+                                <button class="btn btn-sm btn-block btn-default">Add Group Booking</button>
+                            </div>
+                            <div class="pull-left mar-l-5">
+                                <button class="btn btn-sm btn-block btn-default"><i class="fa fa-users"></i></button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="pull-left">
+                                <button class="btn btn-sm btn-block btn-default"><i class="fa fa-search fa-lg"></i> Find Room</button>
+                            </div>
+                            <div class="pull-left mar-l-5">
+                                <button class="btn btn-sm btn-block btn-default"><i class="fa fa-file"></i></button>
+                            </div>
+                            <div class="pull-left">
+                                <button class="btn btn-sm btn-block btn-default mar-l-5"><i class="fa fa-user"></i></button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="pull-left">
+                                <button class="btn btn-sm btn-block btn-default"><i class="fa fa-print fa-lg"></i> Preview</button>
+                            </div>
+                            <div class="pull-left mar-l-5">
+                                <button class="btn btn-sm btn-block btn-default"><i class="fa fa-print"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form role="form">
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Days Display Mode</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Move Res.Without 'Shift' Key</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Hostel mode</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="">Filter group bookings</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="form-group">
+                    <label class="control-label">Rooms Filter</label>
+                    <input type="text" class="form-control" />
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="row" style="border:1px solid #ccc;">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#reservation">Reservation Status</a></li>
+                        <li><a data-toggle="tab" href="#extrareservation">Extra Reservation Status</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="reservation" class="tab-pane fade in active">
+                            <div class="badge-custom badge-red">
+                                Customer Not Arrived
+                            </div>
+                            <div class="badge-custom badge-pink">
+                                Occupied Not Paid
+                            </div>
+                            <div class="badge-custom badge-yellow">
+                                Reservation Scheduled
+                            </div>
+                            <div class="badge-custom badge-brown">
+                                Vacant Not Paid
+                            </div>
+                            <div class="badge-custom badge-blue">
+                                Occupied Advanced Paid
+                            </div>
+                            <div class="badge-custom badge-lightgreen">
+                                Reservation Confirmed
+                            </div>
+                            <div class="badge-custom badge-grey">
+                                Vacant
+                            </div>
+                            <div class="badge-custom badge-darkblue">
+                                Occupied and Paid
+                            </div>
+                            <div class="badge-custom badge-green">
+                                Advance Paid
+                            </div>
+                            <div class="badge-custom badge-darkgray">
+                                Vacant Excess Payment
+                            </div>
+                            <div class="badge-custom badge-light">
+                                Occupied Excess Payment
+                            </div>
+                            <div class="badge-custom badge-darkgreen">
+                                Reservation Paid
+                            </div>
+                        </div>
+                        <div id="extrareservation" class="tab-pane fade">
+                            <h3>Extra Reservation</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#calendarwidth").slider({
+                range: true,
+                values: [20, 67]
+            });
+            $("#calendarheight").slider({
+                range: true,
+                values: [20, 67]
+            });
+        });
+    </script>
+
+</body>
+</html>
